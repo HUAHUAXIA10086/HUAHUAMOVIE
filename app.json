@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#424242",
+    "navigationBarTitleText": "花花电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor":"#26a69a",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/images/home.png",
+      "selectedIconPath": "/images/homeActive.png"
+    }, {
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath": "/images/about.png",
+      "selectedIconPath": "/images/aboutActive.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
