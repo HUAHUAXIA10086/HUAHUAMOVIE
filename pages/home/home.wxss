@@ -18,7 +18,7 @@ page .film .film-type .type-title {
 }
 page .film .film-type .type-title .film-titleName {
   padding-left: 16px;
-  border-left: 3px solid #00b26a;
+  border-left: 6px solid #00b26a;
 }
 page .film .film-type .type-title .film-more {
   padding-right: 16px;
@@ -28,35 +28,4 @@ page .film .film-type .film-list {
   display: flex;
   white-space: nowrap;
   width: 100%;
-}
-page .film .film-type .film-list .film-item {
-  display: inline-block;
-  width: 200rpx;
-  padding: 0 12rpx;
-}
-page .film .film-type .film-list .film-item .film-img {
-  width: 100%;
-  height: 280rpx;
-}
-page .film .film-type .film-list .film-item .film-name {
-  font-size: 22rpx;
-  font-weight: bold;
-  color: #494949;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-page .film .film-type .film-list .film-item .film-star {
-  width: 100%;
-  display: flex;
-  padding-top: 8rpx;
-}
-page .film .film-type .film-list .film-item .film-star .star-img {
-  width: 20rpx;
-  height: 20rpx;
-}
-page .film .film-type .film-list .film-item .film-star .film-grade {
-  font-size: 20rpx;
-  color: #999;
-  padding-left: 8rpx;
 }

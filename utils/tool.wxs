@@ -1,0 +1,9 @@
+// 对展示评分进行处理,index为索引，source为评分
+function starImg( index, source ) {
+  return (index+1)*2 <= source ? '/images/starActive.jpg' : '/images/star.jpg'
+}
+
+// 暴露出去
+module.exports = {
+  starImg: starImg
+}

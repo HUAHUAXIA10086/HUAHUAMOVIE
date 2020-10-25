@@ -1,0 +1,23 @@
+.list {
+  width: 100%;
+}
+.list .list-type {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.list .list-type .type-title {
+  padding: 0 26rpx;
+  margin: 15rpx 0;
+  font-size: 28rpx;
+  border-left: 6rpx solid #00b26a;
+}
+.list .list-type .film-list {
+  padding: 0 12rpx;
+  box-sizing: border-box;
+}
+.list .list-type .film-list .film-item {
+  display: inline-block;
+  width: 33.33%;
+  padding: 0 12rpx;
+  box-sizing: border-box;
+}

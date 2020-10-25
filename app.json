@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/categoryList/categoryList"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,19 +11,25 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "selectedColor":"#26a69a",
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "/images/home.png",
-      "selectedIconPath": "/images/homeActive.png"
-    }, {
-      "pagePath": "pages/about/about",
-      "text": "关于",
-      "iconPath": "/images/about.png",
-      "selectedIconPath": "/images/aboutActive.png"
-    }]
+    "selectedColor": "#26a69a",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/homeActive.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "/images/about.png",
+        "selectedIconPath": "/images/aboutActive.png"
+      }
+    ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "film-item": "./components/film-item/film-item"
+  }
 }

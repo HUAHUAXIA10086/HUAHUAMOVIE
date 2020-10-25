@@ -1,0 +1,11 @@
+<view class="list">
+    <view class="list-type">
+      <view class="type-title">
+        <text>近期热门电影</text>
+      </view>
+      <view class="film-list">
+        <film-item class="film-item" wx:for="{{20}}" wx:key="index"></film-item>
+      </view>
+    </view>
+</view>
+  

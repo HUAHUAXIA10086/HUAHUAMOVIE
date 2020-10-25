@@ -1,21 +1,14 @@
 <view class="film">
-  <view class="film-type" wx:for="{{3}}" wx:key="indexType">
+  <view class="film-type" wx:for="{{filmTypes}}" wx:for-item="hotFilm" wx:key="indexType">
     <!-- 分类标题 -->
     <view class="type-title">
-      <text class="film-titleName">影院热映</text>
+      <text class="film-titleName">{{hotFilm.title}}</text>
       <!-- <navigator class="film-more" open-type='navigate' url="../about/about">更多 ></navigator> -->
-      <navigator class="film-more">更多 ></navigator>
+      <navigator class="film-more" url="../categoryList/categoryList">更多 ></navigator>
     </view>
     <!-- 电影列表 -->
     <scroll-view class="film-list" scroll-x="true">
-      <view class="film-item" wx:for="{{10}}" wx:key="indexItem">
-        <image class="film-img" src="../../images/movie.jpg"></image>
-        <view class="film-name">兔斯基来了兔斯基来了兔斯基来了</view>
-        <view class="film-star">
-          <image class="star-img" src="../../images/starActive.jpg" wx:for="{{5}}" wx:key="indexStar"></image>
-          <text class="film-grade">9.5</text>
-        </view>
-      </view>
+      <film-item wx:for="{{hotFilm.list}}" wx:for-item="film" film="{{film}}" wx:key="indexItem"></film-item>
     </scroll-view >
   </view>
 </view>

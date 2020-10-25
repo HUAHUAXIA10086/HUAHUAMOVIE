@@ -1,0 +1,10 @@
+<view class="film-item">
+  <image class="film-img" src="{{film.cover.url}}"></image>
+  <view class="film-name">{{film.title}}</view>
+  <view class="film-star">
+    <image class="star-img" src="{{ tools.starImg( index, film.rating.value ) }}" wx:for="{{5}}" wx:key="index"></image>
+    <text class="film-grade">{{film.rating.value}}</text>
+  </view>
+</view>
+<!-- 导入工具 -->
+<wxs src="../../utils/tool.wxs" module="tools"></wxs>
