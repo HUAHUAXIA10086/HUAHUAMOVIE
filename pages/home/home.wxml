@@ -1,4 +1,6 @@
 <view class="film">
+  <!-- loading -->
+  <include wx:if="{{filmTypes.length==0}}" src="../../template/loading/loading.wxml"></include>
   <view class="film-type" wx:for="{{filmTypes}}" wx:for-item="hotFilm" wx:key="indexType">
     <!-- 分类标题 -->
     <view class="type-title">

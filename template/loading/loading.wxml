@@ -1,0 +1,4 @@
+<view class="loading">
+  <image src="../../images/loading.gif" class="loadingImg"></image>
+  <view>正在加载数据......</view>
+</view>
