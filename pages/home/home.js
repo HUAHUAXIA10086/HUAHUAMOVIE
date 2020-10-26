@@ -38,7 +38,8 @@ Page({
     }).then(data => {
       let hotFilm = {
         title: data.subject_collection.name,
-        list: data.subject_collection_items
+        list: data.subject_collection_items,
+        method: data.method
       }
       this.setData({
         'filmTypes[0]': hotFilm
@@ -51,7 +52,8 @@ Page({
     }).then(data => {
       let lastedFilm = {
         title: data.subject_collection.name,
-        list: data.subject_collection_items
+        list: data.subject_collection_items,
+        method: data.method
       }
       this.setData({
         'filmTypes[1]': lastedFilm
@@ -64,11 +66,13 @@ Page({
     }).then(data => {
       let freedFilm = {
         title: data.subject_collection.name,
-        list: data.subject_collection_items
+        list: data.subject_collection_items,
+        method: data.method
       }
       this.setData({
         'filmTypes[2]': freedFilm
       })
     }).catch(api.showError)
+    console.log(this.data.filmTypes)
   }
 })

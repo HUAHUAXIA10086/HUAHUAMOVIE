@@ -1,16 +1,16 @@
 <view class="film">
   <!-- loading -->
   <include wx:if="{{filmTypes.length==0}}" src="../../template/loading/loading.wxml"></include>
-  <view class="film-type" wx:for="{{filmTypes}}" wx:for-item="hotFilm" wx:key="indexType">
+  <view class="film-type" wx:for="{{filmTypes}}" wx:for-item="filmType" wx:key="indexType">
     <!-- 分类标题 -->
     <view class="type-title">
-      <text class="film-titleName">{{hotFilm.title}}</text>
+      <text class="film-titleName">{{filmType.title}}</text>
       <!-- <navigator class="film-more" open-type='navigate' url="../about/about">更多 ></navigator> -->
-      <navigator class="film-more" url="../categoryList/categoryList">更多 ></navigator>
+      <navigator class="film-more" url="../categoryList/categoryList?method={{ filmType.method }}">更多 ></navigator>
     </view>
     <!-- 电影列表 -->
     <scroll-view class="film-list" scroll-x="true">
-      <film-item wx:for="{{hotFilm.list}}" wx:for-item="film" film="{{film}}" wx:key="indexItem"></film-item>
+      <film-item wx:for="{{filmType.list}}" wx:for-item="film" film="{{film}}" wx:key="indexItem"></film-item>
     </scroll-view >
   </view>
 </view>

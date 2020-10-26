@@ -1,11 +1,12 @@
 <view class="list">
     <view class="list-type">
       <view class="type-title">
-        <text>近期热门电影</text>
+        <text>{{ categoryTitle }}</text>
       </view>
       <view class="film-list">
-        <film-item class="film-item" wx:for="{{20}}" wx:key="index"></film-item>
+        <film-item class="film-item" wx:for="{{films}}" wx:for-item="film" film="{{film}}" wx:key="index"></film-item>
       </view>
     </view>
 </view>
+<include wx:if="{{showLoadingGif}}" src="../../template/loadingGif/loadingGif.wxml"></include>
   

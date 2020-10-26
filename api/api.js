@@ -32,6 +32,7 @@ const loadHotFilm = function (params = {}) { //默认是空对象
     })
   }).then(res => { //成功
     if (res.statusCode == 200) {
+      res.data.method = 'loadHotFilm'
       return res.data
     } else {
       Promise.reject({
@@ -55,6 +56,7 @@ const loadLastedFilm = function (params = {}) { //默认是空对象
     })
   }).then(res => { //成功
     if (res.statusCode == 200) {
+      res.data.method = 'loadLastedFilm'
       return res.data
     } else {
       Promise.reject({
@@ -77,6 +79,7 @@ const loadFreeFilm = function (params = {}) { //默认是空对象
     })
   }).then(res => { //成功
     if (res.statusCode == 200) {
+      res.data.method = 'loadFreeFilm'
       return res.data
     } else {
       Promise.reject({

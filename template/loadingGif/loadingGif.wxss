@@ -1,0 +1,8 @@
+.loadingGif{
+  width: 100%;
+  text-align: center;
+}
+.loadingGif image{
+  width: 100rpx;
+  height: 100rpx;
+}
