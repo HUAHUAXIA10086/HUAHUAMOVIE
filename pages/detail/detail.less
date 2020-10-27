@@ -1,0 +1,159 @@
+.detail {
+    width: 100%;
+    background-color: #f3f2f3;
+
+    .film-title {
+        .film-bg {
+            position: relative;
+            height: 300rpx;
+            overflow: hidden;
+
+            image {
+                width: 100%;
+            }
+
+            .shadow {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: #000;
+                opacity: 0.5;
+                top: 0;
+            }
+        }
+
+        .film-info {
+            position: absolute;
+            width: 100%;
+            height: 250rpx;
+            top: 100rpx;
+            left: 60rpx;
+            display: flex;
+            color: #fff;
+            font-size: 32rpx;
+
+            image {
+                width: 220rpx;
+                height: 100%;
+            }
+
+            .film-text {
+                margin-left: 30rpx;
+
+                .film-name {
+                    height: 120rpx;
+                    line-height: 120rpx;
+                    font-size: 32rpx;
+                    font-weight: bold;
+                }
+
+                .source {
+                    font-size: 28rpx;
+                }
+            }
+        }
+    }
+
+    .film-intro {
+        margin-top: 70rpx;
+        line-height: 45rpx;
+
+        .content {
+            padding: 16rpx 30rpx;
+
+            .conten-title {
+                font-size: 32rpx;
+                font-weight: bold;
+                color: #3eaa91;
+            }
+
+            .content-detail {
+                font-size: 28rpx;
+            }
+
+        }
+
+        .btn {
+            text-align: center;
+
+            button {
+                width: 50%;
+                letter-spacing: 10rpx;
+            }
+        }
+    }
+
+    .film-actor {
+        .actor-title {
+            border-left: 6rpx solid #3eaa91;
+            border-bottom: 1rpx solid #ccc;
+            margin: 15rpx 0;
+            padding: 10rpx 20rpx;
+        }
+
+        .actor-list {
+            display: flex;
+            white-space: nowrap;
+
+            .actor-item {
+                display: inline-block;
+                width: 160rpx;
+                padding: 0 10rpx;
+                image {
+                    width: 100%;
+                    height: 220rpx;
+                }
+                .actor-name{
+                    font-size: 24rpx;
+                    text-align: center;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+    .film-comment{
+        .comment-title{
+            border-left: 6rpx solid #3eaa91;
+            border-bottom: 1rpx solid #ccc;
+            margin: 15rpx 0;
+            padding: 10rpx 20rpx;
+        }
+        .content-list{
+            .content-item{
+                display: flex;
+                .user-avtror{
+                    width: 100rpx;
+                    text-align: center;
+                    margin: 0 10rpx;
+                    image{
+                        width: 80rpx;
+                        height: 80rpx;
+                        border-radius: 50%;
+                    }
+                }
+                .user-content{
+                    flex: 1;
+                    border-bottom: 1rpx solid #ccc;
+                    margin-right: 10rpx;
+                    padding-bottom: 30rpx;
+                    view{
+                        font-size: 24rpx;
+                        margin: 5rpx 0 10rpx;
+                    }
+                    .name{
+                        font-size: 26rpx;
+                        font-weight: bold;
+                    }
+                    .time{
+                        color: #999;
+                    }
+                    .content{
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

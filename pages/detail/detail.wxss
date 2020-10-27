@@ -1,0 +1,133 @@
+.detail {
+  width: 100%;
+  background-color: #f3f2f3;
+}
+.detail .film-title .film-bg {
+  position: relative;
+  height: 300rpx;
+  overflow: hidden;
+}
+.detail .film-title .film-bg image {
+  width: 100%;
+}
+.detail .film-title .film-bg .shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  top: 0;
+}
+.detail .film-title .film-info {
+  position: absolute;
+  width: 100%;
+  height: 250rpx;
+  top: 100rpx;
+  left: 60rpx;
+  display: flex;
+  color: #fff;
+  font-size: 32rpx;
+}
+.detail .film-title .film-info image {
+  width: 220rpx;
+  height: 100%;
+}
+.detail .film-title .film-info .film-text {
+  margin-left: 30rpx;
+}
+.detail .film-title .film-info .film-text .film-name {
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.detail .film-title .film-info .film-text .source {
+  font-size: 28rpx;
+}
+.detail .film-intro {
+  margin-top: 70rpx;
+  line-height: 45rpx;
+}
+.detail .film-intro .content {
+  padding: 16rpx 30rpx;
+}
+.detail .film-intro .content .conten-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #3eaa91;
+}
+.detail .film-intro .content .content-detail {
+  font-size: 28rpx;
+}
+.detail .film-intro .btn {
+  text-align: center;
+}
+.detail .film-intro .btn button {
+  width: 50%;
+  letter-spacing: 10rpx;
+}
+.detail .film-actor .actor-title {
+  border-left: 6rpx solid #3eaa91;
+  border-bottom: 1rpx solid #ccc;
+  margin: 15rpx 0;
+  padding: 10rpx 20rpx;
+}
+.detail .film-actor .actor-list {
+  display: flex;
+  white-space: nowrap;
+}
+.detail .film-actor .actor-list .actor-item {
+  display: inline-block;
+  width: 160rpx;
+  padding: 0 10rpx;
+}
+.detail .film-actor .actor-list .actor-item image {
+  width: 100%;
+  height: 220rpx;
+}
+.detail .film-actor .actor-list .actor-item .actor-name {
+  font-size: 24rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.detail .film-comment .comment-title {
+  border-left: 6rpx solid #3eaa91;
+  border-bottom: 1rpx solid #ccc;
+  margin: 15rpx 0;
+  padding: 10rpx 20rpx;
+}
+.detail .film-comment .content-list .content-item {
+  display: flex;
+}
+.detail .film-comment .content-list .content-item .user-avtror {
+  width: 100rpx;
+  text-align: center;
+  margin: 0 10rpx;
+}
+.detail .film-comment .content-list .content-item .user-avtror image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.detail .film-comment .content-list .content-item .user-content {
+  flex: 1;
+  border-bottom: 1rpx solid #ccc;
+  margin-right: 10rpx;
+  padding-bottom: 30rpx;
+}
+.detail .film-comment .content-list .content-item .user-content view {
+  font-size: 24rpx;
+  margin: 5rpx 0 10rpx;
+}
+.detail .film-comment .content-list .content-item .user-content .name {
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.detail .film-comment .content-list .content-item .user-content .time {
+  color: #999;
+}
+.detail .film-comment .content-list .content-item .user-content .content {
+  color: #333;
+}

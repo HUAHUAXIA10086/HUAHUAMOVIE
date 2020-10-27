@@ -1,0 +1,65 @@
+<view class="detail">
+  <!-- 电影标题 -->
+  <view class="film-title">
+    <view class="film-bg">
+      <image src="../../images/movie.jpg" mode="widthFix"></image>
+      <view class="shadow"></view>
+    </view>
+    <view class="film-info">
+      <image src="../../images/movie.jpg" mode="aspectFill"></image>
+      <view class="film-text">
+        <view class="film-name">兔斯基来了</view>
+        <view class="source">9.5分 1人评价</view>
+      </view>
+    </view>
+  </view>
+  <!-- 电影简介 -->
+  <view class="film-intro">
+    <view class="content">
+      <text class="conten-title">电影简介:</text>
+      <text class="content-detail">2019 / 中国 / 喜剧 / 万科为宠物将山地车顾问股份 喜剧 / 万科为宠物将山地车顾问股份 喜剧 / 万科为宠物将山地车顾问股份</text>
+    </view>
+    <view class="content">
+      <text class="conten-title">首映时间:</text>
+      <text class="content-detail">2019 / 中国 / 喜剧 / 万科为宠物将山地车顾问股份 喜剧 / 万科为宠物将山地车顾问股份 喜剧 / 万科为宠物将山地车顾问股份</text>
+    </view>
+    <view class="content">
+      <text class="conten-title">剧情介绍:</text>
+      <text
+        class="content-detail">兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基兔斯基是只好兔斯基</text>
+    </view>
+    <view class="btn">
+      <button size="mini" type="warn" plain>收藏</button>
+    </view>
+  </view>
+  <!-- 电影演员 -->
+  <view class="film-actor">
+    <view class="actor-title">
+      <text>演员：</text>
+    </view>
+    <scroll-view class="actor-list" scroll-x="true">
+      <view class="actor-item" wx:for="{{6}}" wx:key="index">
+        <image src="../../images/movie.jpg" aspectFill></image>
+        <view class="actor-name">猫咪小花</view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 电影评论 -->
+  <view class="film-comment">
+    <view class="comment-title">
+      <text>评论：</text>
+    </view>
+    <view class="content-list">
+      <view class="content-item" wx:for="{{6}}" wx:key="index">
+        <view class="user-avtror">
+          <image src="../../images/movie.jpg"></image>
+        </view>
+        <view class="user-content">
+          <view class="name">花花侠</view>
+          <view class="time">2020-10-27 15:58:40</view>
+          <view class="content">你笑起来真好看</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
