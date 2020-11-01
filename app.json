@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/detail/detail",
-    "pages/home/home",
     "pages/about/about",
+    "pages/home/home",
+    "pages/detail/detail",
     "pages/categoryList/categoryList"
   ],
   "window": {

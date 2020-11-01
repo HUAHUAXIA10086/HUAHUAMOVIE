@@ -1,2 +1,3 @@
 @import  '/template/loading/loading.wxss';
-@import './template/loadingGif/loadingGif.wxss'
+@import './template/loadingGif/loadingGif.wxss';
+@import './template/noMore/noMore.wxss'

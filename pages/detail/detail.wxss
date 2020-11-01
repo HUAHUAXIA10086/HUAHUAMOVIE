@@ -55,6 +55,7 @@
   font-size: 32rpx;
   font-weight: bold;
   color: #3eaa91;
+  margin-right: 10rpx;
 }
 .detail .film-intro .content .content-detail {
   font-size: 28rpx;
@@ -101,12 +102,12 @@
 .detail .film-comment .content-list .content-item {
   display: flex;
 }
-.detail .film-comment .content-list .content-item .user-avtror {
+.detail .film-comment .content-list .content-item .user-avatar {
   width: 100rpx;
   text-align: center;
   margin: 0 10rpx;
 }
-.detail .film-comment .content-list .content-item .user-avtror image {
+.detail .film-comment .content-list .content-item .user-avatar image {
   width: 80rpx;
   height: 80rpx;
   border-radius: 50%;

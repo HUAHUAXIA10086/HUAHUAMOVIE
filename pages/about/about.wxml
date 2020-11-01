@@ -1,2 +1,21 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view class="about">
+    <view class="about-user">
+        <image src="{{userInfo.avatarUrl || '/images/movie.jpg'}}" class="user-avator"></image>
+        <view class="user-name" wx:if="{{userInfo}}">花花</view>
+        <button wx:else plain open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击授权登陆</button>
+    </view>
+    <view class="favorite">
+        <view class="favorite-title">我的收藏</view>
+        <view class="favorite-list">
+            <view class="list-item" wx:for="{{favorites}}" wx:key="index">
+                <film-item film="{{item}}"></film-item>
+                <view>
+                    <button plain type="warn" size="mini" bindtap="removeFavorites" data-id="{{index}}">删除</button>
+                </view>
+            </view>
+        </view>
+        <view class="noFavorite" wx:if="{{showNoFavorite}}">
+            ~暂无收藏哦~
+        </view>
+    </view>
+</view>

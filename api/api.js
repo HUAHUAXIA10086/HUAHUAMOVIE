@@ -8,7 +8,7 @@ const URLS = {
   // 免费电影
   freeUrl: 'https://m.douban.com/rexxar/api/v2/subject_collection/movie_free_stream/items',
   // 电影详情
-  detailUrl: 'https://m.douban.com/rexxar/api/v2/movie'
+  detailUrl: 'https://m.douban.com/rexxar/api/v2/movie/'
 }
 
 // 当请求出错时
@@ -35,7 +35,7 @@ const loadHotFilm = function (params = {}) { //默认是空对象
       res.data.method = 'loadHotFilm'
       return res.data
     } else {
-      Promise.reject({
+      return Promise.reject({
         message: res.errMsg
       })
     }
@@ -59,7 +59,7 @@ const loadLastedFilm = function (params = {}) { //默认是空对象
       res.data.method = 'loadLastedFilm'
       return res.data
     } else {
-      Promise.reject({
+      return Promise.reject({
         message: res.errMsg
       })
     }
@@ -82,7 +82,46 @@ const loadFreeFilm = function (params = {}) { //默认是空对象
       res.data.method = 'loadFreeFilm'
       return res.data
     } else {
-      Promise.reject({
+      return Promise.reject({
+        message: res.errMsg
+      })
+    }
+  })
+}
+
+// 加载电影详情
+const loadFilmDetail = function (filmId) {
+  return new Promise((resolve, reject) => {
+    wx.request({
+      url: URLS.detailUrl + filmId,
+      success: resolve,
+      fail: reject
+    })
+  }).then(res => {
+    if (res.statusCode == 200) {
+      return res.data
+    } else {
+      return Promise.reject({
+        message: res.errMsg
+      })
+    }
+  })
+}
+
+// 加载电影评论
+const loadComentDetail = function (filmId, params={}) {
+  return new Promise((resolve, reject) => {
+    wx.request({
+      url: 'https://m.douban.com/rexxar/api/v2/movie/' + filmId + '/interests',
+      data: params,
+      success: resolve,
+      fail: reject
+    })
+  }).then(res => {
+    if (res.statusCode == 200) {
+      return res.data
+    } else {
+      return Promise.reject({
         message: res.errMsg
       })
     }
@@ -92,5 +131,7 @@ module.exports = {
   showError,
   loadHotFilm,
   loadLastedFilm,
-  loadFreeFilm
+  loadFreeFilm,
+  loadFilmDetail,
+  loadComentDetail
 }

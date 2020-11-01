@@ -6,6 +6,7 @@ Page({
     films: [],
     count: 12,
     showLoadingGif: false, // 控制loadingGif图片的显示与隐藏
+    noMore: false, //控制没有更多数据的显示与隐藏
     total: 0 //记录数据总条数
   },
   onLoad: function (options) {
@@ -51,6 +52,10 @@ Page({
         this.setData({
           showLoadingGif: false
         })
+      })
+    }else{
+      this.setData({
+        noMore: true
       })
     }
   },

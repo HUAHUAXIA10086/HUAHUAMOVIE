@@ -1,4 +1,4 @@
-<navigator class="film-item" url="../../pages/detail/detail">
+<navigator class="film-item" url="../../pages/detail/detail?filmId={{film.id}}">
   <image class="film-img" src="{{film.cover.url}}"></image>
   <view class="film-name">{{film.title}}</view>
   <view class="film-star">

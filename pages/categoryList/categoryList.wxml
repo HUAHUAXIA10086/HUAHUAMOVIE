@@ -9,4 +9,5 @@
     </view>
 </view>
 <include wx:if="{{showLoadingGif}}" src="../../template/loadingGif/loadingGif.wxml"></include>
+<include wx:if="{{noMore}}" src="../../template/noMore/noMore.wxml"></include>
   
